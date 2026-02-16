@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقعي الاحترافي</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<a href="#" class="logo">Khtoah</a>
+
+<div class="menu-icon" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#">Home</a></li>
+<li><a href="#">My Account</a></li>
+<li><a href="#">Planning</a></li>
+<li><a href="#">Reservations</a></li>
+<li><a href="#">Activites</a></li>
+</ul>
+</header>
+
+<script>
+function toggleMenu() {
+var links = document.getElementById("navLinks");
+if (links.style.display === "flex") {
+links.style.display = "none";
+} else {
+links.style.display = "flex";
+}
+}
+</script>
+</body>
+</html>
